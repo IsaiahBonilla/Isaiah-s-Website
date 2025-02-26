@@ -3,4 +3,4 @@ const bg = document.querySelector('.bg')
 
 let load = 0
 
-loadText.innerText = ` `
+loadText.innerText = `${load}%`
