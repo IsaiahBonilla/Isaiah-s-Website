@@ -11,6 +11,6 @@ function blurring(){
         clearInterval(int)
     }
 
-    loadText.innerText =`${load}%`
+    loadText.innerText = `${load}%`
     bg.style.filter = `blur(${load})`
 }
