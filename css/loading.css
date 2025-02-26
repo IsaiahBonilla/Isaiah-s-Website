@@ -9,8 +9,10 @@ body {
     margin: 0;
 }
 .bg {
-    background: url('images/dog.png');
-    no-repeat center center/cover;
+    background: url('../images/dog.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     width: 100vh;
     height: 100vh;
 }
