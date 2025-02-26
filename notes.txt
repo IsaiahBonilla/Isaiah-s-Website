@@ -1,0 +1,10 @@
+if i want github to reflect changes
+
+git add .
+
+
+git commit -m "some text"
+
+git push
+
+password

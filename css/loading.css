@@ -1,0 +1,15 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.bg {
+    background: url('images/dog.png'); no-repeat center center/cover;
+    width: 100vh;
+    height: 100vh;
+}
