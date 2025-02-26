@@ -20,5 +20,6 @@ body {
     z-index: -1;
 }
 .loading-text {
-    
+    font-size: 50px;
+    color: #ffff;
 }
