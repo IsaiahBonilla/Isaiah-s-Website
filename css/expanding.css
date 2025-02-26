@@ -11,4 +11,11 @@ body{
 }
 .container{
     display:flex;
+    width: 90vw;
+}
+.panel{
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    height:80vh;
 }
