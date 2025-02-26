@@ -1,4 +1,6 @@
 const loadText = document.querySelector('.loading-text')
 const bg = document.querySelector('.bg')
 
-loadText
+let load = 0
+
+loadText.innerText = ` `
