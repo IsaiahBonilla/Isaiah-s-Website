@@ -33,10 +33,10 @@ document.addEventListener('keyup', (event)=>{
         positionY = positionY - 10
     }
     else if (event.key == 'ArrowLeft') {
-        positionX = positionX - 10
+        positionX = positionX + 10
     }
     else if (event.key == 'ArrowRight') {
-        positionX = positionX + 10
+        positionX = positionX - 10
     }
     element3.style.top = `${positionY}px`
     element3.style.right = `${positionX}px`
@@ -54,6 +54,8 @@ element4.addEventListener('click', ()=>{
 document.addEventListener('keyup',(event)=>{
     console.log(event.key)
     if (event.key == "j") {
-        
+        element4.style.width = "300px"
+        element4.style.width = "50px"
+        element4.ineerHTML = "<h4>Click me to shrink. <br> Press 'j' to bring me back </h4>"
     }
 })
