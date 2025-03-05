@@ -53,4 +53,7 @@ element4.addEventListener('click', ()=>{
 
 document.addEventListener('keyup',(event)=>{
     console.log(event.key)
+    if (event.key == "j") {
+        
+    }
 })
