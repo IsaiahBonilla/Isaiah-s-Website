@@ -3,6 +3,7 @@
 }
 
 body{
+    background-color: grey;
     display:flex;
     height: 100vh;
     justify-content: center;
@@ -10,8 +11,8 @@ body{
     margin: 0;
 }
 .container{
-    display:flex;
     width: 90vw;
+    display:flex;
 }
 .panel{
     background-size:cover;
