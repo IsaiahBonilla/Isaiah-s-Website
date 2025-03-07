@@ -4,7 +4,7 @@
 
 body{
     background-color: grey;
-    display:flex;
+    display: flex;
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -12,15 +12,17 @@ body{
 }
 .container{
     width: 90vw;
-    display:flex;
+    display: flex;
 }
 .panel{
-    background-size:cover;
-    background-position:center;
-    background-repeat:no-repeat;
-    height:80vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
     margin: 10px;
     border-radius: 50px;
     color: white;
-    flex: 1;
+    cursor: pointer;
+
+    flex: 0.5;
 }
