@@ -23,6 +23,11 @@ body{
     border-radius: 50px;
     color: white;
     cursor: pointer;
-
     flex: 0.5;
 }
+
+.panel.active {
+    flex: 5;
+}
+
+.panel
