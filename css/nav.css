@@ -57,7 +57,7 @@ body {
 }
 
 .nav a.current, .nav a:hover {
-    color: blue;
+    color: gold;
     font-weight:bold;
 }
 .hero {
