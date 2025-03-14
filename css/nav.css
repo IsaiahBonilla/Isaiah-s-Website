@@ -55,6 +55,11 @@ body {
 .nav.active .container {
     padding: 10px 0;
 }
+
+.nav a.current, .nav a:hover {
+    color: blue;
+    font-weight:bold;
+}
 .hero {
     position: relative;
     background-image: url("../images/room.jpg");
