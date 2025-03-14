@@ -6,7 +6,7 @@ buttons.forEach(button => {
     btn.innerHTML = button
     btn.addEventListener('click', () => {
         document.getElementById('buttons')
-        element1.innerHTML = button
+        element1.innerHTML = 'button'
     })
     document.getElementById('buttons').appendChild(btn)
 })
