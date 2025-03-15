@@ -51,3 +51,10 @@ body {
     top: 0px;
     left: 0px;
 }
+
+#element1 .active {
+    position: absolute;
+    color: white;
+    top: 0px;
+    left: 0px;
+}
