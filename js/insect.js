@@ -58,9 +58,10 @@ function createInsect(){
     })
 }
 function catchInsect(){
+    let insect = event.target
     increaseScore()
-    this.classList.add('caught')
-    setTimeout(() => this.remove(), 2000)
+    insect.classList.add('caught')
+    setTimeout(() => insect.remove(), 2000)
     addInsects()
 }
 
@@ -71,6 +72,9 @@ function addInsects(){
 
 function increaseScore(){
         score = score + 1
+        if (score == 10){
+            message.classList.add('visible')
+        }
         scoreEl.innerHTML = `Score: ${score}`
         getRandomLocation()
 }
