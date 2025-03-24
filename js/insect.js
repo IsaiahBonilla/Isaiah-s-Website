@@ -39,7 +39,7 @@ function increaseTime() {
         m = `0${m}`
     }
     timeEl.innerHTML = `Time: ${m}:${s}`
-    seconds = seconds + 1;
+    seconds = seconds + 1
     getRandomLocation()
 }
 
