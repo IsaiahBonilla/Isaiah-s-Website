@@ -9,14 +9,15 @@ body {
     top: 50px;
     left: 50px;
 }
-text {
-    /* display: flex;
+.text {
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     position: absolute;
     top: 100px;
-    left: 1000px;
+    left: 625px;
     font-family: inherit;
     color: blue;
+
 
 }
