@@ -9,3 +9,9 @@ body {
     top: 50px;
     left: 50px;
 }
+text {
+    font-family: inherit;
+    top: 100px;
+    left: 100px;
+    color: blue;
+}
