@@ -15,7 +15,7 @@ body {
     justify-content: center;
     position: absolute;
     top: 100px;
-    left: 620px;
+    left: 600px;
     font-family: inherit;
     color: blue;
 }
@@ -26,6 +26,16 @@ body {
     position: absolute;
     top: 200px;
     left: 100px;
+    font-family: inherit;
+    color: blue;
+}
+.extra {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 200px;
+    left: 700px;
     font-family: inherit;
     color: blue;
 }
