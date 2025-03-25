@@ -10,8 +10,10 @@ body {
     left: 50px;
 }
 text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     font-family: inherit;
-    top: 100px;
-    left: 100px;
     color: blue;
+
 }
