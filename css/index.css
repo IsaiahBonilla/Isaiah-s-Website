@@ -9,7 +9,7 @@ body {
     top: 50px;
     left: 50px;
 }
-.text {
+.message {
     display: flex;
     align-items: center;
     justify-content: center;
