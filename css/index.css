@@ -4,7 +4,7 @@
     padding: 0;
 }
 
-body {
+.body {
     font-family: 'Open-Sans', sans-serif;
     top: 50px;
     left: 50px;
@@ -49,3 +49,4 @@ body {
     align-items: center;
     background-color: black;
 }
+

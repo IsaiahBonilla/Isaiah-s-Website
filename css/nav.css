@@ -40,12 +40,12 @@ body {
 }
 
 .nav a {
-    color: #ffffff;
+    color: white;
     padding: 7px 15px;
 }
 
 .nav.active {
-    background-color: white;
+    background-color: black;
 }
 
 .nav.active a {
@@ -72,7 +72,7 @@ body {
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
-    color: rgb(0,0,0);
+    color: white;
     z-index: -2;
 }
 
@@ -109,4 +109,13 @@ body {
     color: rgb(55,55,55);
     line-height: 30px;
     letter-spacing: 1.2px;
+}
+#time {
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 27px;
+    left: 5px;
 }
