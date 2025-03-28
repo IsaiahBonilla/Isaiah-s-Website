@@ -13,6 +13,8 @@ let selected_insect = {}
 
 start_btn.addEventListener('click', () => {
     screens[0].classList.add('up')
+    stopSongs()
+    document.getElementById('applause').play()
 
 })
 
@@ -86,4 +88,11 @@ function getRandomLocation(){
     const x = Math.random() * (width - 200) + 100
     const y = Math.random() * (height - 200) + 100
     return {x, y}
+}
+
+function stopSongs(){
+    sounds.forEach(sound => {
+        document.getElementById(sound).pause()
+        document.getElementById(sound).currentTime = 0;
+    })
 }
