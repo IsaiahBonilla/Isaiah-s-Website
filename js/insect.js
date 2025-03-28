@@ -91,8 +91,8 @@ function getRandomLocation(){
 }
 
 function stopSongs(){
-    sounds.forEach(sound => {
-        document.getElementById(sound).pause()
-        document.getElementById(sound).currentTime = 0;
+    sounds.forEach(sound, () => {
+        document.getElementById('applause').pause()
+        document.getElementById('applause').currentTime = 0;
     })
 }
