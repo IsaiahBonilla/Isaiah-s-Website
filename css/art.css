@@ -1,4 +1,6 @@
-
+*{
+    box-sizing: border-box;
+}
 
 .sun {
     height: 300px;
