@@ -1,6 +1,7 @@
 const container = document.getElementById('container')
 const text = document.getElementById('text')
 
+breatheAnimation();
 setInterval(breathAnimation, 7500)
 
 function breathAnimation() {
