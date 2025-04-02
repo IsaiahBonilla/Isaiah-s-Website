@@ -44,7 +44,30 @@
 }
 
 .structure {
+    width: 150px;
+    height: 250px;
+    background-color: grey;
+    position: absolute;
+    top: 200px;
+    left: 600px;
+}
 
+.r-attachment {
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    top: 250px;
+    left: 750px;
+}
+
+.l-attachment {
+    width: 50px;
+    height: 25px;
+    background-color: black;
+    position: absolute;
+    top: 250px;
+    left: 550px;
 }
 
 .r-arm {
@@ -65,17 +88,40 @@
     left: 500px;
 }
 
+.l-leg-attachment {
+    width: 25px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: 450px;
+    left: 715px;
+}
+
+.r-leg-attachment {
+    width: 25px;
+    height: 50px;
+    background-color: black;
+    position: absolute;
+    top: 450px;
+    left: 615px;
+}
+
 .l-leg {
     width: 50px;
     height: 150px;
     background-color: grey;
     position: absolute;
     top: 500px;
-    left: 800px;
+    left: 700px;
 }
 
 .r-leg {
-
+    width: 50px;
+    height: 150px;
+    background-color: grey;
+    position: absolute;
+    top: 500px;
+    left: 600px;
 }
 
 
