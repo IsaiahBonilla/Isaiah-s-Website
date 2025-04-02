@@ -3,11 +3,44 @@
 }
 
 .face {
-    height: 300px;
-    width: 300px;
-    background-color: yellow;
+    height: 150px;
+    width: 150px;
+    background-color: grey;
+    position: absolute;
+    left: 600px;
+}
+
+.l-eye {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
     border-radius: 50%;
-    position: absolute
+}
+
+.r-eye {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+}
+
+.mouth {
+    width: 150px;
+    height: 50px;
+    background-color: black;
+
+}
+
+.neck {
+    width: 50px;
+    height: 100px;
+    background-color: grey;
+    position: absolute;
+    top: 110px;
+    left: 650px;
 }
 
 .structure {
@@ -15,17 +48,34 @@
 }
 
 .r-arm {
-
+    width: 50px;
+    height: 150px;
+    background-color: grey;
+    position: absolute;
+    top: 250px;
+    left: 800px;
 }
 
 .l-arm {
-
+    width: 50px;
+    height: 150px;
+    background-color: grey;
+    position: absolute;
+    top: 250px;
+    left: 500px;
 }
 
 .l-leg {
-
+    width: 50px;
+    height: 150px;
+    background-color: grey;
+    position: absolute;
+    top: 500px;
+    left: 800px;
 }
 
 .r-leg {
 
 }
+
+
