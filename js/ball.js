@@ -4,6 +4,11 @@ const windowHeight = window.innerHeight // calculates height of screen
 const windowWidth = window.innerWidth // calculates width
 
 createBall()
+
+function moveBall() {
+    ball.style.left = ?
+}
+
 function createBall(){
     document.body.appendChild(ball)
     ball.style.height = `${2 * ballRadius}px`
@@ -14,3 +19,5 @@ function createBall(){
     ball.style.top = `${windowHeight / 2 - ballRadius}px`
     ball.style.left = `${windowWidth / 2 - ballRadius}px`
 }
+
+
