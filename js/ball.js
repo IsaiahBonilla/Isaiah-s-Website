@@ -2,11 +2,18 @@ const ball = document.createElement('div')
 const ballRadius = 30
 const windowHeight = window.innerHeight // calculates height of screen
 const windowWidth = window.innerWidth // calculates width
+let ballXPosition = windowWidth / 2 - ballRadius
+
+
+setInterval(moveBall, 10)
 
 createBall()
 
+
 function moveBall() {
-    ball.style.left = ?
+    ballXPosition = ballXPosition + 5
+    ball.style.left = `${ballXPosition}px`
+
 }
 
 function createBall(){
