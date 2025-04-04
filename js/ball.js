@@ -15,7 +15,7 @@ function moveBall() {
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
     ball.style.left = `${ballXPosition}px`
     if (ballXPosition > windowWidth) {
-        ballXDirection
+        ballXDirection = BallXDirection * -1
     }
 
 }
