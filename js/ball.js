@@ -24,6 +24,7 @@ let score = 0 // Display Score, increase score by 1 every 'hit', if ball passes 
 let level = 1 // Display Level, increase level by 1 every time the score increases by 10, as level increases, increase ball speed
 const scoreEl = document.getElementById('score')
 const levelEl = document.getElementById('level')
+const message = document.getElementById('message')
 createBall()
 createLPaddle()
 
@@ -58,6 +59,7 @@ function moveBall() {
     else if ((ballLeft < LPaddleLeft) && (ballXDirection == -1)) {
         ballXDirection = 0
         ballYDirection = 0
+        message.innerHTML = `Game Over!`
     }
 }
 
