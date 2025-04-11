@@ -69,7 +69,8 @@ function moveBall() {
         ballXDirection = 0
         ballYDirection = 0
         message.innerHTML = `Game Over!`
-        stopSongs()
+        ball.style.display = 'none'
+        bgmusic.loop = false
     }
 }
 

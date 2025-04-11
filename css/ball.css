@@ -3,15 +3,22 @@
     box-sizing: border-box;
 }
 
-body{
+body {
     font-family: 'Press Start 2P', sans-serif;
     overflow: hidden;
 }
-.start-button{
+.start-button {
     font-family: inherit;
     display: flex;
     position: absolute;
     cursor: pointer;
+    left: 625px;
+    top: 300px;
+}
+.message {
+    font-family: inherit;
+    display: flex;
+    position: absolute;
     left: 625px;
     top: 300px;
 }
