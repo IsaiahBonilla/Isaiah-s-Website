@@ -31,6 +31,7 @@ const startbtn = document.getElementById('start-button')
 startbtn.addEventListener('click', () => {
     startbtn.style.display = 'none'
     bgMusic.play()
+    bgMusic.loop = true
     createBall()
     createLPaddle()
 })
