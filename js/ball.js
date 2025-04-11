@@ -34,6 +34,7 @@ startbtn.addEventListener('click', () => {
     bgMusic.loop = true
     createBall()
     createLPaddle()
+    animate()
 })
 
 
@@ -127,7 +128,7 @@ function animate() {
     moveLPaddle()
     requestAnimationFrame(animate)
 }
-animate()
+
 
 function increaseScore() {
     score = score + 1
