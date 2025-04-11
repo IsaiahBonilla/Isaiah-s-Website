@@ -22,8 +22,10 @@ let ballYDirection = 1
 
 const scre = document.createElement('div')
 document.body.appendChild(scre)
+
 let score = 0 // Display Score, increase score by 1 every 'hit', if ball passes paddle, game should end, make ball disapear, let user know game is over
 let level = 1 // Display Level, increase level by 1 every time the score increases by 10, as level increases, increase ball speed
+
 const scoreEl = document.getElementById('score')
 const levelEl = document.getElementById('level')
 const message = document.getElementById('message')
@@ -71,6 +73,8 @@ function moveBall() {
         message.innerHTML = `Game Over!`
         ball.style.display = 'none'
         bgmusic.loop = false
+        document.getElementById('bgmusic').pause()
+        document.getElementById('bgmusic').currentTime = 0;
     }
 }
 
