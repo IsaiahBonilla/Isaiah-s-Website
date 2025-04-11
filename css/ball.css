@@ -7,3 +7,11 @@ body{
     font-family: 'Press Start 2P', sans-serif;
     overflow: hidden;
 }
+.start-button{
+    font-family: inherit;
+    display: flex;
+    position: absolute;
+    cursor: pointer;
+    left: 625px;
+    top: 300px;
+}

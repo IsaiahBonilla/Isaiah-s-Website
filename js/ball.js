@@ -25,8 +25,16 @@ let level = 1 // Display Level, increase level by 1 every time the score increas
 const scoreEl = document.getElementById('score')
 const levelEl = document.getElementById('level')
 const message = document.getElementById('message')
-createBall()
-createLPaddle()
+const bgMusic = document.getElementById('bgmusic')
+const startbtn = document.getElementById('start-button')
+
+startbtn.addEventListener('click', () => {
+    startbtn.style.display = 'none'
+    bgMusic.play()
+    createBall()
+    createLPaddle()
+})
+
 
 function moveBall() {
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
@@ -60,6 +68,7 @@ function moveBall() {
         ballXDirection = 0
         ballYDirection = 0
         message.innerHTML = `Game Over!`
+        stopSongs()
     }
 }
 
