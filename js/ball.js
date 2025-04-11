@@ -3,8 +3,10 @@ const windowWidth = window.innerWidth // calculates width
 
 const ball = document.createElement('div')
 document.body.appendChild(ball)
+
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
+
 let LPaddleWidth = 20
 let LPaddleHeight = 200
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
@@ -37,7 +39,6 @@ startbtn.addEventListener('click', () => {
     animate()
 })
 
-
 function moveBall() {
     ballXPosition = ballXPosition + ballSpeed * ballXDirection
     ballYPosition = ballYPosition + ballSpeed * ballYDirection
@@ -49,7 +50,6 @@ function moveBall() {
     if (ballYPosition < 0 || ballYPosition > windowHeight - 2 * ballRadius) {
         ballYDirection = ballYDirection * -1
     }
-
     let ballTop = ballYPosition
     let ballBottom = ballYPosition + 2 * ballRadius
     let ballLeft = ballXPosition
@@ -62,11 +62,10 @@ function moveBall() {
         (ballTop <= LPaddleBottom) &&
         (ballLeft <= LPaddleRight) &&
         (ballXDirection == -1)
-        ) {
-            ballXDirection = ballXDirection * -1
-            increaseScore()
-            }
-    else if ((ballLeft < LPaddleLeft) && (ballXDirection == -1)) {
+    ) {
+        ballXDirection = ballXDirection * -1
+        increaseScore()
+    } else if ((ballLeft < LPaddleLeft) && (ballXDirection == -1)) {
         ballXDirection = 0
         ballYDirection = 0
         message.innerHTML = `Game Over!`
@@ -74,7 +73,7 @@ function moveBall() {
     }
 }
 
-function createBall(){
+function createBall() {
     ball.style.height = `${2 * ballRadius}px`
     ball.style.width = `${2 * ballRadius}px`
     ball.style.borderRadius = "50%"
@@ -102,7 +101,6 @@ document.addEventListener('keydown', (event) => {
     if (event.key == 's') {
         sKey = true
     }
-
 })
 document.addEventListener('keyup', (event) => {
     if (event.key == 'w') {
@@ -129,10 +127,9 @@ function animate() {
     requestAnimationFrame(animate)
 }
 
-
 function increaseScore() {
     score = score + 1
-    if (score == 10 || score == 20 || score == 30 || score == 40 || score == 50){
+    if (score == 10 || score == 20 || score == 30 || score == 40 || score == 50) {
         increaseLevel()
     }
     scoreEl.innerHTML = `Score: ${score}`
