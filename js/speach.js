@@ -60,5 +60,11 @@ const data = [
 data.forEach(createBox)
 
 function createBox(item) {
-    console.log(item)
+    const box = document.createElement('div')
+    box.classList.add('box')
+    box.innerHTML = `
+        <img src="${item.image}" alt="${item.text}" />
+        <p class="info"> ${item.text} </p>
+    `
+    main.appendChild(box)
 }
