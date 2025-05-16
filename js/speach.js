@@ -1,10 +1,9 @@
-const main = document.quereySelector('main')
+const main = document.querySelector('main')
 const voicesSelect = document.getElementById('voices')
 const textarea = document.getElementById('text')
 const readBtn = document.getElementById('read')
 const toggleBtn = document.getElementById('toggle')
 const closeBtn = document.getElementById('close')
-
 
 const data = [
     {
@@ -56,3 +55,10 @@ const data = [
         text: "I want to go to grandma's..."
     }
 ]
+
+
+data.forEach(createBox)
+
+function createBox(item) {
+    console.log(item)
+}
