@@ -7,7 +7,7 @@ const closeBtn = document.getElementById('close')
 
 const data = [
     {
-        image: '../drink.jpg',
+        image: 'drink.jpg',
         text: "I'm Thirsty"
     },
     {
