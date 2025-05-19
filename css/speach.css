@@ -57,7 +57,7 @@ h1 {
     transition: all 1s ease-in-out;
 }
 
-.text-box.show {
+.text-box .show {
     transform: translate(-50%, 0);
 }
 
@@ -106,7 +106,7 @@ main  {
     transition: 0.2s ease-out;
 }
 
-.box.active {
+.box .active {
     box-shadow: 0 0 10px 5px darksalmon;
 }
 
@@ -116,9 +116,9 @@ main  {
     height: 200px;
 }
 
-.box.info {
+.box .info {
     background-color: darksalmon;
-    color: #fff;
+    color: white;
     font-size: 18px;
     letter-spacing: 1px;
     text-transform: uppercase;
