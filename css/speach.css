@@ -89,3 +89,11 @@ h1 {
     text-align: right;
     cursor: pointer;
 }
+
+main  {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+
