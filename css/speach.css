@@ -75,3 +75,13 @@ h1 {
     width: 100%;
     height: 150px;
 }
+
+.text-box .btn {
+    width: 100%;
+}
+
+.text-box .close {
+    float: right;
+    text-align: right;
+    cursor: pointer;
+}
