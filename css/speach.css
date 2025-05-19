@@ -103,5 +103,27 @@ main  {
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    transition: box-shadow 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+
+.box.active {
+    box-shadow: 0 0 10px 5px darksalmon;
+}
+
+.box img {
+    width: 100%;
+    object-fit: cover;
+    height: 200px;
+}
+
+.box.info {
+    background-color: darksalmon;
+    color: #fff;
+    font-size: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    height: 100%;
 }
