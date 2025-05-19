@@ -43,3 +43,11 @@ h1 {
     margin: auto;
     margin-bottom: 20px;
 }
+
+.text-box {
+    width: 70%;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    background-color: #333;
+}
