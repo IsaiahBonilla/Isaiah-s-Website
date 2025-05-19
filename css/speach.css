@@ -53,8 +53,12 @@ h1 {
     color: #fff;
     padding: 20px;
     border-radius: 5px;
-    transform: translate(-50%,0);
+    transform: translate(-50%, -800px);
     transition: all 1s ease-in-out;
+}
+
+.text-box.show {
+    transform: translate(-50%, 0);
 }
 
 .text-box select {
