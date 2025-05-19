@@ -127,3 +127,9 @@ main  {
     text-align: center;
     height: 100%;
 }
+
+@media (max-width: 110px) {
+    main {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
