@@ -7,11 +7,20 @@ document.body.appendChild(ball)
 const LPaddle = document.createElement('div')
 document.body.appendChild(LPaddle)
 
+const RPaddle = document.createElement('div')
+document.body.appendChild(RPaddle)
+
 let LPaddleWidth = 20
 let LPaddleHeight = 200
 let LPaddleYPosition = windowHeight / 2 - LPaddleHeight / 2
 let LPaddleXPosition = 70
 let LPaddleSpeed = 15
+
+let RPaddleWidth = 20
+let RPaddleHeight = 200
+let RPaddleYPosition = windowHeight / 2 - RPaddleHeight / 2
+let RPaddleXPosition = 140
+let RPaddleSpeed = 15
 
 const ballRadius = 20
 let ballXPosition = windowWidth / 2 - ballRadius
@@ -38,6 +47,7 @@ startbtn.addEventListener('click', () => {
     bgMusic.loop = true
     createBall()
     createLPaddle()
+    createPaddleR()
     animate()
 })
 
@@ -97,8 +107,19 @@ function createLPaddle() {
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
+function createPaddleR() {
+    RPaddle.style.height = `${RPaddleHeight}px`
+    RPaddle.style.width = `${RPaddleWidth}px`
+    RPaddle.style.backgroundColor = 'red'
+    RPaddle.style.position = 'absolute'
+    RPaddle.style.left = '1200px'
+    RPaddle.style.top = `${RPaddleYPosition}px`
+}
+
 wKey = false
 sKey = false
+iKey = false
+kKey = false
 document.addEventListener('keydown', (event) => {
     if (event.key == 'w') {
         wKey = true
@@ -115,6 +136,22 @@ document.addEventListener('keyup', (event) => {
         sKey = false
     }
 })
+document.addEventListener('keydown', (event) => {
+    if (event.key == 'i') {
+        iKey = true
+    }
+    if (event.key == 'k') {
+        kKey = true
+    }
+})
+document.addEventListener('keyup', (event) => {
+    if (event.key == 'i') {
+        iKey = false
+    }
+    if (event.key == 'k') {
+        kKey = false
+    }
+})
 
 function moveLPaddle() {
     if (wKey == true && LPaddleYPosition > 0) {
@@ -126,15 +163,26 @@ function moveLPaddle() {
     LPaddle.style.top = `${LPaddleYPosition}px`
 }
 
+function moveRPaddle() {
+    if (iKey == true && RPaddleYPosition > 0) {
+        RPaddleYPosition = RPaddleYPosition - RPaddleSpeed
+    }
+    if (kKey == true && RPaddleYPosition < windowHeight - RPaddleHeight) {
+        RPaddleYPosition = RPaddleYPosition + RPaddleSpeed
+    }
+    RPaddle.style.top = `${RPaddleYPosition}px`
+}
+
 function animate() {
     moveBall()
     moveLPaddle()
+    moveRPaddle()
     requestAnimationFrame(animate)
 }
 
 function increaseScore() {
     score = score + 1
-    if (score == 10 || score == 20 || score == 30 || score == 40 || score == 50) {
+    if (score == 5 || score == 10 || score == 15 || score == 20 || score == 25) {
         increaseLevel()
     }
     scoreEl.innerHTML = `Score: ${score}`
